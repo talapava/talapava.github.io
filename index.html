@@ -29,6 +29,7 @@
 	padding: 0;
 	box-sizing: inherit;
 	scroll-behavior: inherit;
+	scroll-margin: calc( 5.5rem + 3.75vw ); /* accommodate fixed nav */
 }
 a {
 	color: inherit;
@@ -85,15 +86,15 @@ header a {
 	text-decoration: none;
 }
 header > a svg:first-of-type {
-	height: 3rem;
+	height: 2em;
 	width: auto;
-	margin-top: -.5rem;
+	margin-top: -.333333em;
 }
 header > a svg:last-of-type {
-	height: 1.5rem;
+	height: 1em;
 	width: auto;
-	margin-left: .5rem;
-	margin-bottom: -.375rem;
+	margin-left: .333333em;
+	margin-bottom: -.25em;
 }
 nav {
 	margin-left: auto;
@@ -102,9 +103,13 @@ nav > ul {
 	display: flex;
 	list-style: none;
 }
-nav a {
-	margin-right: .5rem;
-	padding: .5rem 1rem;
+nav li {
+	margin-right: .625vw;
+}
+nav a,
+button {
+	display: inline-block;
+	padding: .5rem calc( .5rem + .625vw );
 	border-radius: .75rem;
 	background: transparent; /* will change */
 	text-shadow: 0 0 .5em #fff;
@@ -112,23 +117,32 @@ nav a {
 }
 nav a:hover,
 nav a:focus,
-nav a:active {
+nav a:active,
+button:hover,
+button:focus,
+button:active {
 	background: rgba( 247, 236, 72, .75 );
 }
 input {
-	width: 12em;
+	width: 12rem;
 	height: 1.5rem;
 	font-size: 1rem;
 	border: 3px solid #F36476;
 	border-radius: .75rem;
 	padding: 0 .5em;
+	margin-left: .9375vw;
 }
 button {
+	padding: .375rem .5rem;
 	border: 0 none;
 	background: none;
 	cursor: pointer;
+	line-height: 1;
 }
 button svg {
+	display: inline-block;
+	height: 1em;
+	width: auto;
 	fill: transparent;
 	stroke: #F36476;
 	stroke-width: 3px;
@@ -241,6 +255,19 @@ footer {
 	height: 0;
 	overflow: hidden;
 }
+
+@media (max-width: 1000px) {
+	header > a svg:last-of-type,
+	nav li:first-of-type,
+	input {
+		display: none;
+	}
+}
+@media (max-width: 480px) {
+	header {
+		font-size: 1rem;
+	}
+}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&text=TalpvStyPAbou&display=swap" rel="stylesheet">
 </head>
@@ -253,11 +280,11 @@ footer {
 
 	<div id="top">
 		<header>
-			<a href="#"><svg width="44" height="48"><use xlink:href="#logo"/></svg><svg width="116" height="25"><use xlink:href="#name"/></svg></a>
+			<a href="#top"><svg width="44" height="48"><use xlink:href="#logo"/></svg><svg width="116" height="25"><use xlink:href="#name"/></svg></a>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="#top">Home</a></li>
+					<li><a href="#about">About</a></li>
 					<li><a href="#stay">Stay</a></li>
 					<li><a href="#play">Play</a></li>
 					<li><a href="#spa">Spa</a></li>
