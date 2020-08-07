@@ -415,6 +415,7 @@ main ul + p {
 	background: #fff;
 }
 .about .content {
+	padding-top: 7.5vw;
 	display: flex;
 	text-align: left;
 	overflow-x: scroll;
