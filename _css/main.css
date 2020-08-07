@@ -190,6 +190,9 @@ main a {
 	border-radius: 1.5rem;
 	transition: all 150ms ease-in-out;
 }
+main svg {
+	transition: all 150ms ease-in-out;
+}
 main a:hover,
 main a:focus,
 main a:active {
