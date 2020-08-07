@@ -1,2 +1,2 @@
 # talapava.github.io
-Talapava pet store
+TALAPAVA pet store
