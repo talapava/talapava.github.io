@@ -4,28 +4,28 @@
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-	src: url("../_fonts/monumentextended-regular.woff2") format( 'woff2' );
+	src: url("/_fonts/monumentextended-regular.woff2") format( 'woff2' );
 }
 @font-face{
 	font-family: "Monument Extended";
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
-	src: url("../_fonts/monumentextended-ultrabold.woff2") format( 'woff2' );
+	src: url("/_fonts/monumentextended-ultrabold.woff2") format( 'woff2' );
 }
 @font-face{
 	font-family: "Geometric";
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-	src: url("../_fonts/geometric-regular.woff2") format( 'woff2' );
+	src: url("/_fonts/geometric-regular.woff2") format( 'woff2' );
 }
 @font-face{
 	font-family: "Geometric";
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
-	src: url("../_fonts/geometric-extrabold.woff2") format( 'woff2' );
+	src: url("/_fonts/geometric-extrabold.woff2") format( 'woff2' );
 }
 
 /* Main */
